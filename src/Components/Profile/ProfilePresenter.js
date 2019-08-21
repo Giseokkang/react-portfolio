@@ -12,21 +12,27 @@ const fadeIn = keyframes`
 `;
 
 const Container = styled.div`
+  width: 100%;
   height: calc(100vh - 60px);
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-gap: 30px;
+  grid-gap: 50px;
   align-items: center;
   justify-items: center;
-  padding: 100px 250px;
+  padding: 100px 300px;
   animation: ${fadeIn} 0.5s linear;
+`;
+
+const SLink = styled(Link)`
+  width: 100%;
+  height: 100%;
 `;
 
 const ItemContainer = styled.div`
   border: 5px solid ${probs => probs.color};
   border-radius: 10px;
-  width: 500px;
-  height: 300px;
+  width: 90%;
+  height: 100%;
   cursor: pointer;
   opacity: 0.7;
   display: flex;
@@ -48,26 +54,26 @@ const ItemTitle = styled.div`
 
 const ProjectPresenter = () => (
   <Container>
-    <Link to="/profile/introduce">
+    <SLink to="/profile/introduce">
       <ItemContainer color="#e74c3c">
         <ItemTitle>자기 소개</ItemTitle>
       </ItemContainer>
-    </Link>
-    <Link to="/profile/technologies">
+    </SLink>
+    <SLink to="/profile/technologies">
       <ItemContainer color="#3498db">
         <ItemTitle>기술 스텍</ItemTitle>
       </ItemContainer>
-    </Link>
-    <Link to="/profile/interview">
+    </SLink>
+    <SLink to="/profile/interview">
       <ItemContainer color="#9b59b6">
         <ItemTitle>셀프 인터뷰</ItemTitle>
       </ItemContainer>
-    </Link>
-    <Link to="/profile/contact">
+    </SLink>
+    <SLink to="/profile/contact">
       <ItemContainer color="#2ecc71">
         <ItemTitle>Contact</ItemTitle>
       </ItemContainer>
-    </Link>
+    </SLink>
   </Container>
 );
 

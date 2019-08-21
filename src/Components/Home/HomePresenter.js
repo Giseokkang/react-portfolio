@@ -86,7 +86,7 @@ const ChangingTitle = styled.span`
 export default () => (
   <Container>
     <BackGround />
-    <Title>신입개발자 강기석의 포트폴리오</Title>
+    <Title>발전을 즐기는 개발자 강기석의 포트폴리오</Title>
     <ChangingTitle>환영합니다.</ChangingTitle>
   </Container>
 );

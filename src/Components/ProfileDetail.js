@@ -2,6 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled, { keyframes } from "styled-components";
 import star from "../images/star.jpg";
+import { FiChevronsLeft } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 const fadeIn = keyframes`
     from {
@@ -14,12 +16,13 @@ const fadeIn = keyframes`
 
 const Container = styled.div`
   margin: 0 auto;
-  width: 80%;
+  width: 100%;
   height: calc(100vh - 60px);
   display: flex;
   flex-direction: column;
   align-items: center;
   animation: ${fadeIn} 0.3s linear;
+  position: relative;
 `;
 
 const BgImg = styled.div`
@@ -69,9 +72,24 @@ const Description = styled.span`
   margin-left: 30px;
 `;
 
+const BackLink = styled(Link)`
+  font-size: 150px;
+  position: absolute;
+  left: 5%;
+  top: 45%;
+  opacity: 0.5;
+  &:hover {
+    opacity: 1;
+    transform: scale(0.98);
+  }
+`;
+
 const ProfileDetail = ({ title, imageUrl, children }) => (
   <Container>
     <BgImg />
+    <BackLink to="/profile">
+      <FiChevronsLeft />
+    </BackLink>
     <Title>{title}</Title>
     <DataContainer>
       <Image imageUrl={imageUrl} />

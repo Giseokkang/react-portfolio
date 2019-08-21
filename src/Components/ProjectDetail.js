@@ -1,5 +1,6 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
+import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
 const fadeIn = keyframes`
@@ -129,9 +130,20 @@ const GitLink = styled.div`
   }
 `;
 
+const BgLink = styled(Link)`
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  cursor: default;
+`;
+
 const ProjectDetail = ({ title, imageUrl, children, webUrl, GithubUrl }) => (
   <Container>
-    <BgImg imageUrl={imageUrl} />
+    <BgLink to="/project">
+      <BgImg imageUrl={imageUrl} />
+    </BgLink>
     <ContentContainer>
       <Title>{title}</Title>
       <ItemContainer>
