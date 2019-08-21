@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import ProfileDetail from "../../ProfileDetail";
-import myPhoto from "../../../images/santiago.jpg";
+import myPhoto from "../../../images/endoftheworld.jpg";
 
 const Container = styled.div``;
 

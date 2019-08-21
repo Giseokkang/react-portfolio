@@ -58,7 +58,6 @@ const Description = styled.span`
 
 const Poster = ({ title, imageUrl, children }) => (
   <Container>
-    {console.log(title, imageUrl, children)}
     <BgImg imageUrl={imageUrl} />
     <Content>
       <Title>{title}</Title>
