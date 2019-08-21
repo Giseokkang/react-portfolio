@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.js": "/react-portfolio/static/js/main.fb69b180.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.fb69b180.chunk.js.map",
+    "runtime~main.js": "/react-portfolio/static/js/runtime~main.3f94e198.js",
+    "runtime~main.js.map": "/react-portfolio/static/js/runtime~main.3f94e198.js.map",
+    "static/js/2.84e55a6f.chunk.js": "/react-portfolio/static/js/2.84e55a6f.chunk.js",
+    "static/js/2.84e55a6f.chunk.js.map": "/react-portfolio/static/js/2.84e55a6f.chunk.js.map",
+    "index.html": "/react-portfolio/index.html",
+    "precache-manifest.20247b3c6eb7f8e0a07b382806039e7a.js": "/react-portfolio/precache-manifest.20247b3c6eb7f8e0a07b382806039e7a.js",
+    "service-worker.js": "/react-portfolio/service-worker.js",
+    "static/media/coding.jpg": "/react-portfolio/static/media/coding.ed0debef.jpg",
+    "static/media/endoftheworld.jpg": "/react-portfolio/static/media/endoftheworld.8070acee.jpg",
+    "static/media/guessmind.jpg": "/react-portfolio/static/media/guessmind.c35a64d9.jpg",
+    "static/media/kakao.jpg": "/react-portfolio/static/media/kakao.60cf3dcf.jpg",
+    "static/media/me.jpg": "/react-portfolio/static/media/me.8da119df.jpg",
+    "static/media/nomflix.jpg": "/react-portfolio/static/media/nomflix.0d0940be.jpg",
+    "static/media/santiago.jpg": "/react-portfolio/static/media/santiago.1955f389.jpg",
+    "static/media/star.jpg": "/react-portfolio/static/media/star.46b4c7ce.jpg",
+    "static/media/thinkful.jpg": "/react-portfolio/static/media/thinkful.34da846d.jpg",
+    "static/media/wetube.jpg": "/react-portfolio/static/media/wetube.24c2b030.jpg"
+  }
+}
