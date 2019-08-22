@@ -1,15 +1,15 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a9bd5d319ed4898a3fc3a81cea919519",
+    "revision": "cdab921b5d371ee009cb9c347f30dc00",
     "url": "/react-portfolio/index.html"
   },
   {
-    "revision": "30a053a252482b4edcdb",
-    "url": "/react-portfolio/static/js/2.659a0b64.chunk.js"
+    "revision": "1372392adca88501a36d",
+    "url": "/react-portfolio/static/js/2.8b8d88f2.chunk.js"
   },
   {
-    "revision": "fe08f78de878b6bc6583",
-    "url": "/react-portfolio/static/js/main.1d955cc3.chunk.js"
+    "revision": "25bb4a714795054454db",
+    "url": "/react-portfolio/static/js/main.cc62c7ae.chunk.js"
   },
   {
     "revision": "4d1d151b896bea087de4",
@@ -26,6 +26,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c35a64d92051cd5fd824a493631b0e62",
     "url": "/react-portfolio/static/media/guessmind.c35a64d9.jpg"
+  },
+  {
+    "revision": "ff100ba32b984600e1aef5c5ef0f0d80",
+    "url": "/react-portfolio/static/media/icon.ff100ba3.gif"
   },
   {
     "revision": "60cf3dcf21ddb983eecdb10758952d34",
