@@ -14,7 +14,7 @@ const children = [
 
 export default () => (
   <ProjectDetail
-    title="Kokoa talk"
+    title="Thinkful"
     imageUrl={thinkful}
     webUrl="https://giseokkang.github.io/thinkful-clone/"
     GithubUrl="https://github.com/Giseokkang/thinkful-clone"

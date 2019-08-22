@@ -14,7 +14,6 @@ const globalstyle = createGlobalStyle`
         color:white;
         padding-top:60px;
 
-
     }
     *{
         box-sizing:border-box;

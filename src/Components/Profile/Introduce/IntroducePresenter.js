@@ -62,7 +62,7 @@ const IntroducePresenter = () => (
         잘하는, 그런 길을 함께 걷고 싶습니다. 많은 관심 부탁드립니다.
         감사합니다.
         <br />
-        (궁금하신 점은 매일 부탁드릴게요!)
+        (궁금하신 점은 메일 부탁드릴게요!)
       </Description>
     </ProfileDetail>
   </Container>

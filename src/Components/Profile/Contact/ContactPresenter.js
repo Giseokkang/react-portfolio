@@ -2,8 +2,16 @@ import React from "react";
 import styled from "styled-components";
 import ProfileDetail from "../../ProfileDetail";
 import myPhoto from "../../../images/endoftheworld.jpg";
+import Loader from "../../Loader";
 
-const Container = styled.div``;
+const Container = styled.div`
+  background-image: url(${props => props.image});
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+`;
 
 const ContentContainer = styled.div`
   display: flex;
@@ -22,8 +30,9 @@ const Desc = styled.span`
   margin-bottom: 20px;
 `;
 
-const ContactPresenter = () => (
-  <Container>
+const ContactPresenter = ({ image, loading }) => (
+  <Container image={loading ? null : image.src}>
+    {loading ? <Loader /> : null}
     <ProfileDetail title="Contact" imageUrl={myPhoto}>
       <ContentContainer>
         <Title>Email</Title>
