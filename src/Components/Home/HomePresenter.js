@@ -78,7 +78,7 @@ const ChangingTitle = styled.span`
   letter-spacing: 0.1em;
   animation: ${typing} 7s steps(30, end) infinite,
     ${blinkCaret} 1s step-start infinite;
-  max-width: 250px;
+  max-width: 275px;
   font-size: 50px;
   margin-bottom: 50px;
 `;
@@ -88,6 +88,6 @@ export default ({ image, loading }) => (
     {loading ? <Loader /> : null}
     <BackGround image={loading ? null : image.src} />
     <Title>발전을 즐기는 개발자 강기석의 포트폴리오</Title>
-    <ChangingTitle>환영합니다.</ChangingTitle>
+    <ChangingTitle>환영합니다!</ChangingTitle>
   </Container>
 );
