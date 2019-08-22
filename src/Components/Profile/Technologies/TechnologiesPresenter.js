@@ -5,6 +5,7 @@ import { Circle } from "rc-progress";
 
 import ProfileDetail from "../../ProfileDetail";
 import myPhoto from "../../../images/santiago.jpg";
+import Loader from "../../Loader";
 
 const transform = keyframes`
   from{
@@ -17,7 +18,24 @@ const transform = keyframes`
   }
   `;
 
-const Container = styled.div``;
+const fadeIn = keyframes`
+  from{
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+  `;
+
+const Container = styled.div`
+  background-image: url(${props => props.image});
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  animation: ${fadeIn} 0.5s ease-in-out;
+`;
 
 const UpItemContainer = styled.div`
   padding: 0 80px;
@@ -73,9 +91,12 @@ const TechnologiesPresenter = ({
   cssPercent,
   javascriptPercent,
   nodeJSPercent,
-  reactPercent
+  reactPercent,
+  image,
+  loading
 }) => (
-  <Container>
+  <Container image={loading ? null : image.src}>
+    {loading ? <Loader /> : null}
     <ProfileDetail title="기술 스텍" imageUrl={myPhoto}>
       <Title>Skills</Title>
       <UpItemContainer>

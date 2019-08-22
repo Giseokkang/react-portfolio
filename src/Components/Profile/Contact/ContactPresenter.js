@@ -1,8 +1,17 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import ProfileDetail from "../../ProfileDetail";
 import myPhoto from "../../../images/endoftheworld.jpg";
 import Loader from "../../Loader";
+
+const fadeIn = keyframes`
+  from{
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+  `;
 
 const Container = styled.div`
   background-image: url(${props => props.image});
@@ -11,6 +20,7 @@ const Container = styled.div`
   width: 100%;
   height: 100%;
   position: relative;
+  animation: ${fadeIn} 0.5s ease-in-out;
 `;
 
 const ContentContainer = styled.div`

@@ -2,18 +2,26 @@ import React from "react";
 import styled, { keyframes } from "styled-components";
 import ProfileDetail from "../../ProfileDetail";
 import myPhoto from "../../../images/me.jpg";
+import Loader from "../../Loader";
 
-const fontColor = keyframes`
-  0%{
+const fadeIn = keyframes`
+  from{
     opacity:0;
-    transform:scale(0.7)
   }
-  100% {
-    opacity:1
+  to {
+    opacity:1;
   }
-`;
+  `;
 
-const Container = styled.div``;
+const Container = styled.div`
+  background-image: url(${props => props.image});
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  animation: ${fadeIn} 0.5s ease-in-out;
+`;
 
 const Motto = styled.span`
   font-size: 30px;
@@ -35,8 +43,9 @@ const Description = styled.span`
   line-height: 35px;
 `;
 
-const IntroducePresenter = () => (
-  <Container>
+const IntroducePresenter = ({ image, loading }) => (
+  <Container image={loading ? null : image.src}>
+    {loading ? <Loader /> : null}
     <ProfileDetail title="자기 소개" imageUrl={myPhoto}>
       <Motto>
         {" "}

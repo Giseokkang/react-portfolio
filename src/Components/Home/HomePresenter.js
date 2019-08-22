@@ -1,6 +1,6 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
-import myImage from "../../images/coding.jpg";
+import Loader from "../Loader";
 
 const typing = keyframes`
   0% {
@@ -56,7 +56,7 @@ const Container = styled.div`
 const BackGround = styled.div`
   background-position: center center;
   background-size: cover;
-  background-image: url(${myImage});
+  background-image: url(${props => props.image});
   position: absolute;
   top: 0;
   left: 0;
@@ -83,9 +83,10 @@ const ChangingTitle = styled.span`
   margin-bottom: 50px;
 `;
 
-export default () => (
+export default ({ image, loading }) => (
   <Container>
-    <BackGround />
+    {loading ? <Loader /> : null}
+    <BackGround image={loading ? null : image.src} />
     <Title>발전을 즐기는 개발자 강기석의 포트폴리오</Title>
     <ChangingTitle>환영합니다.</ChangingTitle>
   </Container>

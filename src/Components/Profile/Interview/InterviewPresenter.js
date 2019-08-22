@@ -3,19 +3,25 @@ import styled, { keyframes } from "styled-components";
 
 import ProfileDetail from "../../ProfileDetail";
 import myPhoto from "../../../images/santiago.jpg";
+import Loader from "../../Loader";
 
 const fadeIn = keyframes`
   from{
     opacity:0;
   }
   to {
-    opacity:0.7;
+    opacity:1;
   }
   `;
 
 const Container = styled.div`
-  height: calc(100vh - 60px);
+  background-image: url(${props => props.image});
+  background-position: center center;
+  background-size: cover;
   width: 100%;
+  height: 100%;
+  position: relative;
+  animation: ${fadeIn} 0.5s ease-in-out;
 `;
 
 const Question = styled.span`
@@ -30,8 +36,9 @@ const Answer = styled.span`
   margin-bottom: 30px;
 `;
 
-const InterviewPresenter = () => (
-  <Container>
+const InterviewPresenter = ({ image, loading }) => (
+  <Container image={loading ? null : image.src}>
+    {loading ? <Loader /> : null}
     <ProfileDetail title="셀프 인터뷰" imageUrl={myPhoto}>
       <Question>1. 현재 새로운 기회를 찾고 있는 이유가 무엇인가요?</Question>
 
