@@ -78,7 +78,7 @@ const ChangingTitle = styled.span`
   letter-spacing: 0.1em;
   animation: ${typing} 7s steps(30, end) infinite,
     ${blinkCaret} 1s step-start infinite;
-  max-width: 275px;
+  max-width: 290px;
   font-size: 50px;
   margin-bottom: 50px;
 `;
