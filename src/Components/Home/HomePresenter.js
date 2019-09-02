@@ -1,6 +1,7 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 import Loader from "../Loader";
+import device from "../Device";
 
 const typing = keyframes`
   0% {
@@ -69,6 +70,28 @@ const BackGround = styled.div`
 const Title = styled.span`
   font-size: 50px;
   margin-bottom: 20px;
+
+  @media ${device.tablet} {
+    padding: 70px;
+  }
+
+  @media ${device.mobileL} {
+    padding: 100px;
+    font-size: 35px;
+    text-align: center;
+  }
+
+  @media ${device.mobileM} {
+    padding: 90px;
+    font-size: 35px;
+    text-align: center;
+  }
+
+  @media ${device.mobileS} {
+    padding: 60px;
+    font-size: 35px;
+    text-align: center;
+  }
 `;
 
 const ChangingTitle = styled.span`

@@ -2,6 +2,7 @@ import React from "react";
 import styled, { keyframes } from "styled-components";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
+import device from "./Device";
 
 const fadeIn = keyframes`
 from {
@@ -55,6 +56,10 @@ const ContentContainer = styled.div`
   color: black;
   position: relative;
   animation: ${scale} 0.7s ease-in-out;
+
+  @media ${device.laptop} {
+    width: 85%;
+  }
 `;
 
 const ItemContainer = styled.div`
@@ -70,6 +75,15 @@ const Title = styled.span`
   margin-top: 20px;
   margin-bottom: 50px;
   padding: 20px 0px;
+
+  @media ${device.laptop} {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  @media ${device.tablet} {
+    font-size: 2em;
+  }
 `;
 
 const ContentTitle = styled.span`
@@ -80,12 +94,25 @@ const ContentTitle = styled.span`
   width: 150px;
   border-bottom: 3px solid #1e272e;
   font-weight: 600;
+
+  @media ${device.tablet} {
+    font-size: 1.5em;
+  }
+
+  @media ${device.mobileL} {
+    margin-bottom: 7px;
+  }
 `;
 
 const Description = styled.span`
   font-size: 17px;
   line-height: 30px;
   margin-bottom: 30px;
+
+  @media ${device.mobileL} {
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
 `;
 
 const LinkContaier = styled.div`

@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled, { keyframes } from "styled-components";
-import star from "../images/star.jpg";
 import { FiChevronsLeft } from "react-icons/fi";
 import { Link } from "react-router-dom";
 
@@ -24,19 +23,6 @@ const Container = styled.div`
   animation: ${fadeIn} 0.3s linear;
   position: relative;
 `;
-
-// const BgImg = styled.div`
-//   background-image: url(${star});
-//   background-position: center center;
-//   background-size: cover;
-//   width: 100%;
-//   height: 100%;
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   z-index: -1;
-//   opacity: 0.7;
-// `;
 
 const Title = styled.span`
   width: 300px;

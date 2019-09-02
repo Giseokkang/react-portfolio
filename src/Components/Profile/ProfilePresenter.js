@@ -1,6 +1,7 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 import { Link } from "react-router-dom";
+import device from "../Device";
 
 const fadeIn = keyframes` 
   from {
@@ -21,17 +22,34 @@ const Container = styled.div`
   justify-items: center;
   padding: 100px 300px;
   animation: ${fadeIn} 0.5s linear;
+
+  @media ${device.tablet} {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 const SLink = styled(Link)`
   width: 100%;
   height: 100%;
+
+  @media ${device.tablet} {
+    width: 250%;
+    height: 200%;
+    margin-bottom: 30px;
+  }
+
+  @media ${device.mobileL} {
+    width: 400px;
+    height: 300px;
+    margin-bottom: 30px;
+  }
 `;
 
 const ItemContainer = styled.div`
   border: 5px solid ${probs => probs.color};
   border-radius: 10px;
-  width: 90%;
+  width: 100%;
   height: 100%;
   cursor: pointer;
   opacity: 0.7;
@@ -50,6 +68,10 @@ const ItemContainer = styled.div`
 const ItemTitle = styled.div`
   font-size: 40px;
   font-weight: 600;
+
+  @media ${device.laptop} {
+    font-size: 35px;
+  }
 `;
 
 const ProjectPresenter = () => (

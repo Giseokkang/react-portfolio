@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
+import device from "./Device";
 
 const BgImg = styled.div`
   background-image: url(${probs => probs.imageUrl});
@@ -15,6 +15,11 @@ const BgImg = styled.div`
   z-index: 9;
   border-radius: 20px;
   transition: transform 0.5s ease-in-out;
+
+  @media ${device.mobileL} {
+    display: none;
+    position: static;
+  }
 `;
 
 const Container = styled.div`
@@ -33,6 +38,19 @@ const Container = styled.div`
       transform: scale(0.5) translateY(-100px);
     }
   }
+
+  @media ${device.mobileL} {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 50px;
+    position: static;
+    text-align: center;
+    margin-bottom: 50px;
+    background-color: #e67e22;
+    padding: 30px;
+  }
 `;
 
 const Content = styled.div`
@@ -45,6 +63,12 @@ const Content = styled.div`
   align-items: center;
   padding: 30px 0px;
   background-color: black;
+
+  @media ${device.mobileL} {
+    position: static;
+    padding: 0;
+    background-color: #e67e22;
+  }
 `;
 
 const Title = styled.span`
@@ -54,6 +78,10 @@ const Title = styled.span`
 const Description = styled.span`
   margin-top: 10px;
   font-size: 15px;
+
+  @media ${device.mobileL} {
+    display: none;
+  }
 `;
 
 const Poster = ({ title, imageUrl, children }) => (

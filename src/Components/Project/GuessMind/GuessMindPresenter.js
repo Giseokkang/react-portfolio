@@ -1,6 +1,4 @@
 import React from "react";
-import styled, { keyframes } from "styled-components";
-import { Link } from "react-router-dom";
 import guessmind from "../../../images/guessmind.jpg";
 import ProjectDetail from "../../ProjectDetail";
 

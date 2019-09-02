@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
 
-const globalstyle = createGlobalStyle`
+export const Globalstyle = createGlobalStyle`
     ${reset}
     a{
         text-decoration:none;
@@ -19,5 +19,3 @@ const globalstyle = createGlobalStyle`
         box-sizing:border-box;
     }
 `;
-
-export default globalstyle;

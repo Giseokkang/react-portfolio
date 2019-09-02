@@ -2,12 +2,12 @@ import React from "react";
 import styled, { keyframes } from "styled-components";
 import { Link } from "react-router-dom";
 import Poster from "../Poster";
-import myImage from "../../images/coding.jpg";
 import wetube from "../../images/wetube.jpg";
 import guessMind from "../../images/guessmind.jpg";
 import nomflix from "../../images/nomflix.jpg";
 import thinkful from "../../images/thinkful.jpg";
 import kakao from "../../images/kakao.jpg";
+import device from "../Device";
 
 const fadeIn = keyframes`
     from {
@@ -26,6 +26,12 @@ const Container = styled.div`
   padding: 80px 150px;
   grid-gap: 50px;
   animation: ${fadeIn} 0.5s linear;
+
+  @media ${device.mobileL} {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export default () => (
