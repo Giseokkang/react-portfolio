@@ -26,22 +26,17 @@ const Container = styled.div`
   @media ${device.tablet} {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
   }
 `;
 
 const SLink = styled(Link)`
-  width: 100%;
+  width: 80%;
   height: 100%;
 
   @media ${device.tablet} {
-    width: 250%;
-    height: 200%;
-    margin-bottom: 30px;
-  }
-
-  @media ${device.mobileL} {
-    width: 400px;
-    height: 300px;
     margin-bottom: 30px;
   }
 `;

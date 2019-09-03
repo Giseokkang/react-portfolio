@@ -3,6 +3,7 @@ import styled, { keyframes } from "styled-components";
 import ProfileDetail from "../../ProfileDetail";
 import myPhoto from "../../../images/me.jpg";
 import Loader from "../../Loader";
+import device from "../../Device";
 
 const fadeIn = keyframes`
   from{
@@ -30,17 +31,33 @@ const Motto = styled.span`
   font-weight: 600;
   line-height: 40px;
   color: white;
+
+  @media ${device.mobileL} {
+    font-size: 20px;
+    line-height: 25px;
+    padding: 0;
+    margin-bottom: 20px;
+  }
 `;
 
 const SayHello = styled.span`
   font-size: 25px;
   text-align: center;
   font-weight: 500;
+
+  @media ${device.mobileL} {
+    font-size: 18px;
+  }
 `;
 
 const Description = styled.span`
   font-size: 20px;
   line-height: 35px;
+
+  @media ${device.mobileL} {
+    font-size: 15px;
+    line-height: 20px;
+  }
 `;
 
 const IntroducePresenter = ({ image, loading }) => (

@@ -4,6 +4,7 @@ import styled, { keyframes } from "styled-components";
 import ProfileDetail from "../../ProfileDetail";
 import myPhoto from "../../../images/santiago.jpg";
 import Loader from "../../Loader";
+import device from "../../Device";
 
 const fadeIn = keyframes`
   from{
@@ -29,11 +30,19 @@ const Question = styled.span`
   font-weight: 600;
   margin-bottom: 30px;
   margin-left: 10px;
+
+  @media ${device.mobileL} {
+    font-size: 20px;
+  }
 `;
 
 const Answer = styled.span`
   font-size: 20px;
   margin-bottom: 30px;
+
+  @media ${device.mobileL} {
+    font-size: 15px;
+  }
 `;
 
 const InterviewPresenter = ({ image, loading }) => (

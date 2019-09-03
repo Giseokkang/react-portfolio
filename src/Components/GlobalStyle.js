@@ -12,7 +12,7 @@ export const Globalstyle = createGlobalStyle`
         font-size:14px;
         background-color:rgba(20,20,20,1);
         color:white;
-        padding-top:60px;
+        padding-top:60px; 
 
     }
     *{

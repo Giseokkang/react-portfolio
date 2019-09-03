@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import styled, { keyframes } from "styled-components";
 import { FiChevronsLeft } from "react-icons/fi";
 import { Link } from "react-router-dom";
+import device from "../Components/Device";
 
 const fadeIn = keyframes`
     from {
@@ -22,6 +23,11 @@ const Container = styled.div`
   align-items: center;
   animation: ${fadeIn} 0.3s linear;
   position: relative;
+
+  @media ${device.laptop} {
+    background-image: none;
+    justify-content: center;
+  }
 `;
 
 const Title = styled.span`
@@ -31,12 +37,21 @@ const Title = styled.span`
   margin: 50px 0px 20px 0px;
   padding-bottom: 20px;
   border-bottom: 5px solid red;
+
+  @media ${device.mobileL} {
+    font-size: 30px;
+  }
 `;
 
 const DataContainer = styled.div`
   display: flex;
   padding: 50px 50px;
   border-radius: 20px;
+
+  @media ${device.laptop} {
+    padding: 50px 50px;
+    display: flex;
+  }
 `;
 
 const Image = styled.div`
@@ -48,6 +63,10 @@ const Image = styled.div`
   border-radius: 20px;
   margin-right: 30px;
   animation: ${fadeIn} 0.5s linear;
+
+  @media ${device.laptop} {
+    display: none;
+  }
 `;
 
 const Description = styled.span`
@@ -56,6 +75,11 @@ const Description = styled.span`
   width: 700px;
   font-size: 20px;
   margin-left: 30px;
+
+  @media ${device.laptop} {
+    width: 100%;
+    margin: 0 auto;
+  }
 `;
 
 const BackLink = styled(Link)`
@@ -67,6 +91,20 @@ const BackLink = styled(Link)`
   &:hover {
     opacity: 1;
     transform: scale(0.98);
+  }
+
+  @media ${device.laptop} {
+    font-size: 100px;
+  }
+
+  @media ${device.tablet} {
+    font-size: 80px;
+    top: 2%;
+    left: 5%;
+  }
+
+  @media ${device.mobileL} {
+    font-size: 50px;
   }
 `;
 

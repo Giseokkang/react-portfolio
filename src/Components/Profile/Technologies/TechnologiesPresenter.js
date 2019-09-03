@@ -6,6 +6,7 @@ import { Circle } from "rc-progress";
 import ProfileDetail from "../../ProfileDetail";
 import myPhoto from "../../../images/santiago.jpg";
 import Loader from "../../Loader";
+import device from "../../Device";
 
 const transform = keyframes`
   from{
@@ -84,6 +85,11 @@ const License = styled.span`
   font-size: 20px;
   text-align: center;
   margin-top: 30px;
+
+  @media ${device.mobileL} {
+    font-size: 20px;
+    padding: 0 50px;
+  }
 `;
 
 const TechnologiesPresenter = ({

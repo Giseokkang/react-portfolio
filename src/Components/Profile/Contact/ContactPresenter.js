@@ -3,6 +3,7 @@ import styled, { keyframes } from "styled-components";
 import ProfileDetail from "../../ProfileDetail";
 import myPhoto from "../../../images/endoftheworld.jpg";
 import Loader from "../../Loader";
+import device from "../../Device";
 
 const fadeIn = keyframes`
   from{
@@ -27,17 +28,31 @@ const ContentContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin-left: 100px;
+
+  @media ${device.mobileL} {
+    margin: 0;
+  }
 `;
 
 const Title = styled.span`
   font-size: 70px;
   margin-top: 70px;
   margin-bottom: 50px;
+
+  @media ${device.mobileL} {
+    font-size: 30px;
+    text-align: center;
+  }
 `;
 
 const Desc = styled.span`
   font-size: 35px;
   margin-bottom: 20px;
+
+  @media ${device.mobileL} {
+    font-size: 20px;
+    text-align: center;
+  }
 `;
 
 const ContactPresenter = ({ image, loading }) => (
