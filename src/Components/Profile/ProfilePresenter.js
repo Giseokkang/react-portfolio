@@ -39,6 +39,10 @@ const SLink = styled(Link)`
   @media ${device.tablet} {
     margin-bottom: 30px;
   }
+
+  @media ${device.mobileL} {
+    height: 100px;
+  }
 `;
 
 const ItemContainer = styled.div`
