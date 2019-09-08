@@ -22,6 +22,7 @@ const Container = styled.div`
   justify-items: center;
   padding: 100px 300px;
   animation: ${fadeIn} 0.5s linear;
+  max-height: 200%;
 
   @media ${device.tablet} {
     display: flex;

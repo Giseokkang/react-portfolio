@@ -36,6 +36,9 @@ const Container = styled.div`
   height: 100%;
   position: relative;
   animation: ${fadeIn} 0.5s ease-in-out;
+
+  @media ${device.mobileL} {
+  }
 `;
 
 const UpItemContainer = styled.div`

@@ -30,6 +30,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   color: #1e272e;
+  max-height: 200%;
 `;
 
 const BgImg = styled.div`
@@ -43,6 +44,7 @@ const BgImg = styled.div`
   height: 100%;
   position: absolute;
   top: 0;
+  max-height: 200%;
 `;
 
 const ContentContainer = styled.div`
@@ -60,6 +62,11 @@ const ContentContainer = styled.div`
   @media ${device.laptop} {
     width: 85%;
   }
+
+  @media ${device.mobileL} {
+    width: 85%;
+    height: 600px;
+  }
 `;
 
 const ItemContainer = styled.div`
@@ -67,6 +74,10 @@ const ItemContainer = styled.div`
   flex-direction: column;
   padding: 0 50px;
   width: 100%;
+
+  @media ${device.mobileL} {
+    padding: 0 30px;
+  }
 `;
 
 const Title = styled.span`
@@ -83,6 +94,12 @@ const Title = styled.span`
 
   @media ${device.tablet} {
     font-size: 2em;
+  }
+
+  @media ${device.mobileL} {
+    font-size: 27px;
+    margin-top: 10px;
+    margin-bottom: 5px;
   }
 `;
 
@@ -101,6 +118,7 @@ const ContentTitle = styled.span`
 
   @media ${device.mobileL} {
     margin-bottom: 7px;
+    font-size: 15px;
   }
 `;
 
@@ -110,8 +128,9 @@ const Description = styled.span`
   margin-bottom: 30px;
 
   @media ${device.mobileL} {
-    font-size: 1em;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    line-height: 20px;
   }
 `;
 
@@ -122,6 +141,10 @@ const LinkContaier = styled.div`
   position: absolute;
   bottom: 50px;
   right: 0;
+
+  @media ${device.mobileL} {
+    bottom: 20px;
+  }
 `;
 
 const WebLink = styled.div`

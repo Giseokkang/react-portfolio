@@ -23,10 +23,14 @@ const Container = styled.div`
   align-items: center;
   animation: ${fadeIn} 0.3s linear;
   position: relative;
+  max-height: 200%;
 
   @media ${device.laptop} {
-    background-image: none;
     justify-content: center;
+  }
+
+  @media ${device.mobileL} {
+    height: 100%;
   }
 `;
 
@@ -40,6 +44,8 @@ const Title = styled.span`
 
   @media ${device.mobileL} {
     font-size: 30px;
+    margin: 0;
+    margin-top: 40px;
   }
 `;
 
@@ -49,8 +55,7 @@ const DataContainer = styled.div`
   border-radius: 20px;
 
   @media ${device.laptop} {
-    padding: 50px 50px;
-    display: flex;
+    padding: 30px 50px;
   }
 `;
 
@@ -95,6 +100,9 @@ const BackLink = styled(Link)`
 
   @media ${device.laptop} {
     font-size: 100px;
+
+    top: 5%;
+    left: 5%;
   }
 
   @media ${device.tablet} {

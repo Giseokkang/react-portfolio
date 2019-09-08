@@ -22,6 +22,11 @@ const Container = styled.div`
   height: 100%;
   position: relative;
   animation: ${fadeIn} 0.5s ease-in-out;
+  max-height: 200%;
+
+  @media ${device.mobileL} {
+    max-height: 200%;
+  }
 `;
 
 const Motto = styled.span`
