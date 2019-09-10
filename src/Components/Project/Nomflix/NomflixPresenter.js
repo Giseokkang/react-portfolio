@@ -13,7 +13,7 @@ export default () => (
   <ProjectDetail
     title="Nomflix"
     imageUrl={nomflix}
-    webUrl="https://giseokkang.github.io/nomflix/"
+    webUrl="https://laughing-villani-11c8fc.netlify.com/"
     GithubUrl="https://github.com/Giseokkang/nomflix"
   >
     {children}
