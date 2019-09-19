@@ -63,6 +63,16 @@ const ItemContainer = styled.div`
     background-color: ${probs => probs.color};
     animation: ${fadeIn} 0.5s linear;
   }
+
+  @media ${device.tablet} {
+    background-color: ${probs => probs.color};
+    opacity: 1;
+
+    &:hover {
+      transform: none;
+      animation: none;
+    }
+  }
 `;
 
 const ItemTitle = styled.div`
