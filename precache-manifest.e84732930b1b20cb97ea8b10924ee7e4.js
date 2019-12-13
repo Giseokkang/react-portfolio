@@ -1,15 +1,15 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9de85e170777ef1c0a03b3d48b588dfe",
+    "revision": "aa1f4a3eaf7cd135925ff4ae4e65877c",
     "url": "/react-portfolio/index.html"
   },
   {
-    "revision": "0388fa58ac80ed25147e",
-    "url": "/react-portfolio/static/js/2.369f9e52.chunk.js"
+    "revision": "63cb76bbc75bd9c48f20",
+    "url": "/react-portfolio/static/js/2.965c1f77.chunk.js"
   },
   {
-    "revision": "3482a40ded8abb0b5550",
-    "url": "/react-portfolio/static/js/main.624c06db.chunk.js"
+    "revision": "037f9fe83fe6bdfea7a7",
+    "url": "/react-portfolio/static/js/main.3117f72c.chunk.js"
   },
   {
     "revision": "4d1d151b896bea087de4",
@@ -38,6 +38,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "8da119df24f6c26b11c50a04c0c0540b",
     "url": "/react-portfolio/static/media/me.8da119df.jpg"
+  },
+  {
+    "revision": "ff29b8b9f24e276ddb43e4a72a78e5e5",
+    "url": "/react-portfolio/static/media/mybluejay.ff29b8b9.jpg"
   },
   {
     "revision": "0d0940be9f9d652ada08ad37ec14b4f9",
