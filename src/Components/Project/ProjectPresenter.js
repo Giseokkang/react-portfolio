@@ -2,6 +2,7 @@ import React from "react";
 import styled, { keyframes } from "styled-components";
 import { Link } from "react-router-dom";
 import Poster from "../Poster";
+import mybluejay from "../../images/mybluejay.jpg";
 import wetube from "../../images/wetube.jpg";
 import guessMind from "../../images/guessmind.jpg";
 import nomflix from "../../images/nomflix.jpg";
@@ -36,6 +37,11 @@ const Container = styled.div`
 
 export default () => (
   <Container>
+    <Link to="/project/mybluejay">
+      <Poster title="MyBlueJay" imageUrl={mybluejay}>
+        Twitter and instagram Cloning
+      </Poster>
+    </Link>
     <Link to="/project/wetube">
       <Poster title="Wetube" imageUrl={wetube}>
         Youtube Cloning

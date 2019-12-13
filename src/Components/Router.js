@@ -8,6 +8,7 @@ import Technologies from "./Profile/Technologies";
 import Interview from "./Profile/Interview";
 import Contact from "./Profile/Contact";
 import Project from "./Project";
+import MyblueJay from "./Project/MyBlueJay";
 import Wetube from "./Project/Wetube";
 import GuessMind from "./Project/GuessMind";
 import Kakaotalk from "./Project/Kakaotalk";
@@ -28,6 +29,7 @@ export default () => (
         <Route path="/profile/contact" exact component={Contact} />
 
         <Route path="/project" exact component={Project} />
+        <Route path="/project/mybluejay" exact component={MyblueJay} />
         <Route path="/project/wetube" exact component={Wetube} />
         <Route path="/project/guessmind" exact component={GuessMind} />
         <Route path="/project/kakaotalk" exact component={Kakaotalk} />

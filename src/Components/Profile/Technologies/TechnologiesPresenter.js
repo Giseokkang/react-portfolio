@@ -166,8 +166,9 @@ const TechnologiesPresenter = ({
       <Title>ETC</Title>
       <License>전자산업기사</License>
       <License>
-        pug, express, MongoDB, WebSocket, heroku, AWS, Passport, REST API,
-        Axios, AJAX, styled component, MVC, TypeScript, Reacthook
+        React, React-hooks, React-native, Styled component, TypeScript, pug,
+        Express, MongoDB, WebSocket, heroku, AWS, Passport, REST API, Axios,
+        AJAX, MVC, Redux, Redux-Saga, NextJS
       </License>
     </ProfileDetail>
   </Container>
