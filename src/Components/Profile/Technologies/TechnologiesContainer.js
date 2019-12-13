@@ -51,10 +51,10 @@ export default class extends React.Component {
     const { percent, image, loading } = this.state;
     return (
       <TechnologiesPresenter
-        htmlPercent={Math.min(percent, 90)}
-        cssPercent={Math.min(percent, 90)}
-        javascriptPercent={Math.min(percent, 80)}
-        nodeJSPercent={Math.min(percent, 80)}
+        htmlPercent={Math.min(percent, 75)}
+        cssPercent={Math.min(percent, 75)}
+        javascriptPercent={Math.min(percent, 60)}
+        nodeJSPercent={Math.min(percent, 60)}
         reactPercent={Math.min(percent, 60)}
         loading={loading}
         image={image}
